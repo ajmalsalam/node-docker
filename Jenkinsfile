@@ -12,7 +12,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/ajmalsalam/node-docker.git'
+                git branch: 'main', url: 'https://github.com/ajmalsalam/node-docker.git'
             }
         }
 

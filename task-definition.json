@@ -1,0 +1,22 @@
+{
+  "family": "nodejs-task",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::269494630502:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "name": "nodejs-container",
+      "image": "269494630502.dkr.ecr.eu-north-1.amazonaws.com/nodejs-jenkins-app:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 3000,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  ]
+}

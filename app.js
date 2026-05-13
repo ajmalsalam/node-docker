@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Jenkins ECS CI/CD Pipeline Working!');
+    res.send('Hi, your Jenkins ECS CI/CD Pipeline Working!');
 });
 
 const PORT = 3000;

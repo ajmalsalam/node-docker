@@ -5,7 +5,7 @@ pipeline {
         AWS_REGION = 'us-east-1'
         ECR_REPO = '269494630502.dkr.ecr.us-east-1.amazonaws.com/nodejs-jenkins-app'
         ECS_CLUSTER = 'nodejs-cluster-us'
-        ECS_SERVICE = 'nodejs-service'
+        ECS_SERVICE = 'nodejs-task-service-gqrcar8y'
     }
 
     stages {
